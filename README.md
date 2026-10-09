@@ -1,7 +1,7 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00ADD8&height=100&section=header&text=nullopt-t&fontColor=ffffff&fontSize=44&fontAlignY=40&animation=fadeIn" width="100%" alt="header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00ADD8&section=header&text=nullopt-t&fontColor=ffffff&fontSize=52&fontAlignY=40&height=120&animation=fadeIn" width="100%" alt="header"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=900&color=00ADD8&center=true&vCenter=true&width=600&lines=%24+whoami+%E2%86%92+A.+Ali;Backend+Engineer+%7C+Go+%26+Node.js" alt="Typing SVG"/>
+  <img src="assets/typing.svg" alt="A. Ali, Backend Engineer" width="760"/>
 </p>
 
 ```console
@@ -28,6 +28,6 @@ things and figuring out how they work.
 </p>
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=nullopt-t&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117" alt="stats"/>
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nullopt-t&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117" alt="top langs"/>
+  <img src="assets/stats.svg" alt="GitHub stats" height="170"/>
+  <img src="assets/langs.svg" alt="Top languages" height="170"/>
 </p>
