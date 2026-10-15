@@ -6,7 +6,7 @@
 
 ```console
 visitor@github:~$ ssh nullopt-t
-Welcome 👋 I'm A. Ali, a backend engineer who loves building
+Welcome 👋 I'm Amr Ali, a backend engineer who loves building
 things and figuring out how they work.
 ```
 
