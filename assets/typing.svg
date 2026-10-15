@@ -1,75 +1,83 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="56" viewBox="0 0 760 56">
-<style>
-@font-face {
-  font-family: "PlexMono";
-  src: url(data:font/woff2;base64,d09GMgABAAAAAD0EABIAAAAArhAAADyfAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGkwbhnAchlYGYBaXOgCEWAhECYJzERAKgowYge5gC4QyAAE2AiQDiGAEIAWDJgeJaQyDWBvrm0fE26eU4G5VFW0gbKmCcWwKcB6[...]
-  font-weight: 600;
-}
-text {
-  font-family: "PlexMono", "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
-  font-weight: 600;
-  font-size: 24px;
-  fill: #00ADD8;
-}
-.cursor {
-  fill: #00ADD8;
-}
-.r1 {
-  animation: clip1 8s steps(18) infinite;
-}
-.r2 {
-  animation: clip2 8s steps(18) infinite;
-}
-.c1 {
-  animation: cur1 8s steps(18) infinite, blink 0.75s step-start infinite;
-}
-.c2 {
-  animation: cur2 8s steps(18) infinite, blink 0.75s step-start infinite;
-}
+  <style>
+    text {
+      font-family: "IBM Plex Mono", "DejaVu Sans Mono", monospace;
+      font-weight: 600;
+      font-size: 24px;
+      fill: #00ADD8;
+    }
 
-@keyframes clip1 {
-  0% { width: 0; }
-  20%, 42% { width: 270px; }
-  48%, 100% { width: 0; }
-}
-@keyframes cur1 {
-  0% { transform: translateX(0); opacity: 1; }
-  20%, 42% { transform: translateX(270px); opacity: 1; }
-  48% { transform: translateX(0); opacity: 1; }
-  48.1%, 100% { transform: translateX(0); opacity: 0; }
-}
+    .cursor {
+      fill: #00ADD8;
+    }
 
-@keyframes clip2 {
-  0%, 50% { width: 0; }
-  70%, 92% { width: 270px; }
-  98%, 100% { width: 0; }
-}
-@keyframes cur2 {
-  0%, 49.9% { transform: translateX(0); opacity: 0; }
-  50% { transform: translateX(0); opacity: 1; }
-  70%, 92% { transform: translateX(270px); opacity: 1; }
-  98% { transform: translateX(0); opacity: 1; }
-  98.1%, 100% { transform: translateX(0); opacity: 0; }
-}
+    .r1 {
+      animation: clip1 8s steps(18, end) infinite;
+    }
 
-@keyframes blink {
-  50% { fill-opacity: 0; }
-}
-</style>
-<defs>
-  <clipPath id="p1">
-    <rect class="r1" x="250.4" y="0" width="0" height="56"/>
-  </clipPath>
-  <clipPath id="p2">
-    <rect class="r2" x="250.4" y="0" width="0" height="56"/>
-  </clipPath>
-</defs>
-<g>
-  <text x="250.4" y="36" clip-path="url(#p1)">&gt; whoami -&gt; Amr Ali</text>
-  <rect class="cursor c1" x="250.4" y="14" width="2.5" height="26"/>
-</g>
-<g>
-  <text x="250.4" y="36" clip-path="url(#p2)">&gt; Backend Engineer</text>
-  <rect class="cursor c2" x="250.4" y="14" width="2.5" height="26"/>
-</g>
+    .r2 {
+      animation: clip2 8s steps(18, end) infinite;
+    }
+
+    .c1 {
+      animation: cur1 8s steps(18, end) infinite,
+                 blink 0.75s step-start infinite;
+    }
+
+    .c2 {
+      animation: cur2 8s steps(18, end) infinite,
+                 blink 0.75s step-start infinite;
+    }
+
+    @keyframes clip1 {
+      0% { width: 0; }
+      20%, 42% { width: 270px; }
+      48%, 100% { width: 0; }
+    }
+
+    @keyframes cur1 {
+      0% { transform: translateX(0); opacity: 1; }
+      20%, 42% { transform: translateX(270px); opacity: 1; }
+      48% { transform: translateX(0); opacity: 1; }
+      48.1%, 100% { opacity: 0; }
+    }
+
+    @keyframes clip2 {
+      0%, 50% { width: 0; }
+      70%, 92% { width: 270px; }
+      98%, 100% { width: 0; }
+    }
+
+    @keyframes cur2 {
+      0%, 49.9% { opacity: 0; transform: translateX(0); }
+      50% { opacity: 1; transform: translateX(0); }
+      70%, 92% { opacity: 1; transform: translateX(270px); }
+      98% { opacity: 1; transform: translateX(0); }
+      98.1%, 100% { opacity: 0; }
+    }
+
+    @keyframes blink {
+      50% { fill-opacity: 0; }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="p1">
+      <rect class="r1" x="250.4" y="0" width="0" height="56"/>
+    </clipPath>
+    <clipPath id="p2">
+      <rect class="r2" x="250.4" y="0" width="0" height="56"/>
+    </clipPath>
+  </defs>
+
+  <g>
+    <text x="250.4" y="36" clip-path="url(#p1)">&gt; whoami -&gt; Amr Ali</text>
+    <rect class="cursor c1" x="250.4" y="14" width="2.5" height="26"/>
+  </g>
+
+  <g>
+    <text x="250.4" y="36" clip-path="url(#p2)">&gt; Backend Engineer</text>
+    <rect class="cursor c2" x="250.4" y="14" width="2.5" height="26"/>
+  </g>
 </svg>
