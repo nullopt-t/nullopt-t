@@ -65,7 +65,7 @@ text {
   </clipPath>
 </defs>
 <g>
-  <text x="250.4" y="36" clip-path="url(#p1)">&gt; whoami -&gt; A. Ali</text>
+  <text x="250.4" y="36" clip-path="url(#p1)">&gt; whoami -&gt; Amr Ali</text>
   <rect class="cursor c1" x="250.4" y="14" width="2.5" height="26"/>
 </g>
 <g>
